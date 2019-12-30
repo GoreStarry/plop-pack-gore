@@ -1,0 +1,29 @@
+{
+  "name": "plop-pack-gore",
+  "version": "1.0.0",
+  "description": "plop template for gore",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoreStarry/plop-pack-gore.git"
+  },
+  "keywords": [
+    "plop",
+    "react"
+  ],
+  "author": "Gore Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoreStarry/plop-pack-gore/issues"
+  },
+  "homepage": "https://github.com/GoreStarry/plop-pack-gore#readme",
+  "devDependencies": {
+    "plop": "^2.5.3"
+  },
+  "dependencies": {
+    "yargs": "^15.0.2"
+  }
+}

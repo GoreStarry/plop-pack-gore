@@ -1,0 +1,21 @@
+import React , { useRef, useState, useCallback, useEffect } from "react"
+{{#if usePropTypes}} import PropTypes from "prop-types" {{/if}}
+
+{{#ifeq styleType 'scss-module'}}
+import sty from "./{{name}}.module.scss"
+{{/ifeq}}
+{{#ifeq styleType 'css'}}
+import "./{{name}}.css"
+{{/ifeq}}
+
+const {{name}} = ({children}) => {
+  return <div {{#if styleType}}
+    className={{#ifeq styleType 'scss-module'}}{ sty.{{name}} }
+    {{/ifeq}}{{#ifeq styleType 'css'}}"{{name}}"{{/ifeq}}{{/if}}>
+    {children}
+  </div>;
+};
+
+{{name}}.propTypes = {}
+
+export default {{name}}

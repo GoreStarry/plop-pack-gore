@@ -10,7 +10,7 @@ module.exports = function(plop) {
   // plop.load('../../helpers/setUpperCaseForFirstLetterHelper.js', {}, { helpers: true })
   // partials
   // plop.load('../Styles/partials/setPartialStyles.js', {}, { partials: true })
-  console.log(plop.getHelperList())
+  // console.log(plop.getHelperList())
 
   plop.setGenerator('Functional Component', {
     description: 'A scaffold for a function component (React.SFC) and tests.',
